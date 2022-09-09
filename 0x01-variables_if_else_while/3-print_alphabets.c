@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Prints alphabets in upper case
  *
  * Return: Always 0 (Success)
