@@ -25,5 +25,5 @@ int main(void)
 			printf(", ");
 	}
 
-	returm (0);
+	return (0);
 }
