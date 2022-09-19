@@ -7,7 +7,7 @@
  * Return: returns length
  */
 
-int _atoi(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
