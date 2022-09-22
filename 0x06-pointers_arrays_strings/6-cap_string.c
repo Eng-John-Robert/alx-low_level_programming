@@ -23,7 +23,7 @@ int _strlen(char *s)
  * Return: returns the capitalized string.
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int index = 0;
 
