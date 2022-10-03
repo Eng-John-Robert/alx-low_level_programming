@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _isalpha - main function
- *
- * @c: character to compare
- *
- * Return: 1 if true, 0 if false
+ * _isalpha - checks for alphabet character
+ * @c: character to check
+ * Return: 1 if lower or uppercase, 0 if not alphabet character
  */
 
 int _isalpha(int c)
@@ -14,5 +12,9 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
