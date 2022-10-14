@@ -7,9 +7,12 @@
  * @valist: valist
  */
 
-void print_char(va_list valist)
+void print_char(va_list arg)
 {
-	printf("%c", va_arg(valist, int));
+	char letter;
+
+	letter = va_arg(arg, int);
+	printf("%c", letter);
 }
 
 /**
@@ -17,9 +20,12 @@ void print_char(va_list valist)
  * @valist: valist
  */
 
-void print_int(va_list valist)
+void print_int(va_list arg)
 {
-	printf("%d", va_arg(valist, int));
+	int num;
+
+	num = va_arg(arg, int);
+	printf("%d", num);
 }
 
 /**
@@ -62,11 +68,12 @@ void print_all(const char * const format, ...)
 	int i, j = 0;
 	va_list valist;
 
-	datatype choice[] = { {'c', print_char},
+	datatype choice[] = {
+		{'c', print_char},
 		{'i', print_int},
-		{'f', print_float}
+		{'f', print_float},
 		{'s', print_string},
-			{'\0', NULL} };
+		 {'\0', NULL} };
 
 	/* iterate format; if datatype matched, access function via struct */
 	va_start(valist, format);
